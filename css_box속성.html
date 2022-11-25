@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>박스속성</title>
+    </head>
+    <body>
+        <h1>박스속성</h1>
+        <p>웹페이지 레이아웃 구성시 가장 중요</p>
+        <ul>
+            <li>margin - 여백</li>
+            <li>padding - 영역</li>
+            <li>width , height - 크기</li>
+        </ul>
+
+        <h2>예제</h2>
+        <div class="box1">
+            <span>100PX</span>
+            <span>100px</span>
+            <p class="pad">패딩 50px</p>
+            <p class="mar">마진 50px</p>
+        </div>
+        <style>
+            h1 {background-color: blueviolet;}
+            .box1 {}
+            .box1>span {padding: 50px;
+                        background-color: aquamarine;}
+            .box1>span:nth-child(1) {display: inline-block;}
+            .box1>span:nth-child(2) {}
+            /* 인라인시에는 위아래 영역을 제대로 인식못함. 단, 앞에 줄을 미리 맞춰놓은 경우 엑셀처럼 따라감. */
+
+            .box1>.pad {padding: 50px;
+                        background-color: bisque;}
+            .box1>.mar {margin: 50px;
+                        background-color: greenyellow;}
+        </style>
+
+    </body>
+</html>
