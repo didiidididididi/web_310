@@ -1,0 +1,16 @@
+/* 언어설정 */
+@charset 'UTF-8';
+
+*{margin: 0; padding: 0;}
+
+.box3 {width: 40%; float: left;}
+.box4 {width: 30%; float: left;}
+.boxA-1 {width: 30%; float: left;}
+.boxA::after {content: ""; clear: both; display: block;}
+
+@media (min-width:768px) {
+        .boxA {width: 688px;
+                margin: 0 auto;}
+
+
+}
