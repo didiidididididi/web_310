@@ -47,14 +47,14 @@
 
 @media (min-width:600px)
 {.boxC {display: flex; height: 1200px; 
-        flex-flow: row wrap;
+        flex-flow: row nowrap;
          /* justify-content: space-around; */
-        align-items: center;
-        align-content: center}
+         align-items: center;
+         align-content: flex-start;}
 
 
 .box3 {width: 50%;
-        order: 3;}
+        order: 0;}
 .box4 {width: 50%;
         order: 0;}
 .box5 {width: 50%;
@@ -70,7 +70,7 @@
 @media (min-width:960px){.wrap {display: flex;}
 .boxA {width: 20%;
         display: flex;
-        flex-direction: column-reverse;}
+        flex-direction: column;}
 .boxA>div {flex: 1;}
 .boxA-2 {width: 80%;}}
 
