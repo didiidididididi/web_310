@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의소개</title>
+
+    <!-- 폰트어썸연결 -->
+    
+    <script src="https://use.fontawesome.com/19be655260.js"></script>
+    <!-- 외부스타일시트 -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ex_sub01.css">
+    <!-- 자바스크립트 -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <!-- 자바스크립트 동적구현 -->
+    <script>
+        // 메뉴버튼을 클릭했을때, gnb를 보이게 해라
+
+        $(document).ready(function(){
+
+            $('.menu_toggle_btn').click(function(){
+
+                $('.gnb').slideToggle()
+
+
+            })
+
+
+
+
+        })
+
+
+    </script>
+
+</head>
+<body class="sub_html">
+    <div id="wrap">
+        <section class="info_section">
+            <ul class="info_list">
+                <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+            </ul>
+        </section>
+        <header class="header">
+            <h1 class="logo"><a href="#">민수</a></h1>
+            <nav class="nav">
+                <ul class="gnb">
+                    <li><a href="#">HOME</a><span class="sub_menu_toggle_btn">하위메뉴토글버튼</span></li>
+                    <li><a href="#">소개</a><span class="sub_menu_toggle_btn">하위메뉴토글버튼</span></li>
+                    <li><a href="#">좋아하는것</a><span class="sub_menu_toggle_btn">하위메뉴토글버튼</span></li>
+                </ul>
+            </nav>
+            <span class="menu_toggle_btn">전체메뉴토글버튼</span>
+        </header>
+        </section>
+        
+        <section class="content_section01">
+            <div>
+                <h2 class="title">인기검색어</h2>
+                <ul>
+                    <li><a href="#"><img src="http://picsum.photos/200/300"><span>1위: 브라질</span></a></li>
+                    <li><a href="#"><img src="http://picsum.photos/200/300"><span>2위: 프랑스</span></a></li>
+                    <li><a href="#"><img src="http://picsum.photos/200/300"><span>3위: 잉글랜드</span></a></li>
+                    <li><a href="#"><img src="http://picsum.photos/200/300"><span>4위: 카타르월드컵</span></a></li>
+                    <li><a href="#"><img src="http://picsum.photos/200/300"><span>5위: 2023</span></a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="content_ex">
+            <div>
+                <h2>소제목</h2>
+                <ul>
+                    <li><a href="#"><img src="http://picsum.photos/300/400"><div class="text">내용1</div></a></li>
+                    <li><a href="#"><img src="http://picsum.photos/300/400"><div class="text">내용2</div></a></li>
+                    <li><a href="#"><img src="http://picsum.photos/300/400"><div class="text">내용3</div></a></li>
+                    <li><a href="#"><img src="http://picsum.photos/300/400"><div class="text">내용4</div></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>Copyright ⓒ 2022. MINSU All rights reserved.</p>
+        </footer>
+
+    </div>
+    
+</body>
+</html>

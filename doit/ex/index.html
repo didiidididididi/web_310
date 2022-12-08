@@ -5,28 +5,143 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>나의소개</title>
+
+    <!-- 폰트어썸연결 -->
+    
+    <script src="https://use.fontawesome.com/19be655260.js"></script>
     <!-- 외부스타일시트 -->
     <link rel="stylesheet" href="style.css">
+    <!-- 자바스크립트 -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <!-- 자바스크립트 동적구현 -->
+    <script>
+        // 메뉴버튼을 클릭했을때, gnb를 보이게 해라
+
+        $(document).ready(function(){
+
+            $('.menu_toggle_btn').click(function(){
+
+                $('.gnb').slideToggle()
+
+
+            })
+
+
+
+
+        })
+
+
+    </script>
+
 </head>
 <body>
     <div id="wrap">
-        <header class="header">
-            <h1>로고</h1>
-            <nav>메뉴</nav>
-        </header>
-        <section class="slider_section">슬라이더</section>
-        <section class="gallery_section">갤러리</section>
-        <section class="rankup_section">인기검색</section>
-
-        <section class="latest_post_section">최신글</section>
-        <section class="popular_post_section">인기글</section>
-        <section class="banner_section">
-            <div class="banner_box_01">배</div>
-            <div class="banner_box_02">너</div>
+        <section class="info_section">
+            <ul class="info_list">
+                <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+            </ul>
         </section>
-        <section class="social_section">SNS</section>
+        <header class="header">
+            <h1 class="logo"><a href="#">민수</a></h1>
+            <nav class="nav">
+                <ul class="gnb">
+                    <li><a href="#">HOME</a><span class="sub_menu_toggle_btn">하위메뉴토글버튼</span></li>
+                    <li><a href="#">소개</a><span class="sub_menu_toggle_btn">하위메뉴토글버튼</span></li>
+                    <li><a href="#">좋아하는것</a><span class="sub_menu_toggle_btn">하위메뉴토글버튼</span></li>
+                </ul>
+            </nav>
+            <span class="menu_toggle_btn">전체메뉴토글버튼</span>
+        </header>
+        <section class="slider_section">
+            <span class="prev_btn">이전버튼</span>
+            <img src="/img/센과 치하로의 행방불명 - 2022 _ 지브리 스튜디오, 기블리, 스튜디오 지브리 예술.jfif" alt="">
+            <span class="next_btn">다음버튼</span>
+            
+        </section>
+        <section class="gallery_section">
+            <ul class="gallery_list">
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="/img/jjanggu.png" alt="" class="jjanggu1">
+                            <figcaption>HTML바로가기</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="/img/정색.jfif" alt="" class="jjanggu1">
+                            <figcaption>HTML바로가기</figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+            
+            
+        </section>
+        <section class="rankup_section">
+            <h2 class="title">인기검색어</h2>
+            <ul>
+                <li><a href="#">1위: 한국 포르투갈</a></li>
+                <li><a href="#">2위: 이강인</a></li>
+                <li><a href="#">3위: 손흥민</a></li>
+                <li><a href="#">4위: 황희찬</a></li>
+                <li><a href="#">5위: 짱구</a></li>
+            </ul>
+        </section>
 
-        <footer class="footer">푸터</footer>
+        <section class="latest_post_section">
+            <h2 class="title">최근글</h2>
+            <ul class="latest_post_list">
+                <li><a href="#">최근글1</a></li>
+                <li><a href="#">최근글2</a></li>
+                <li><a href="#">최근글3</a></li>
+                <li><a href="#">최근글4</a></li>
+            </ul>
+        </section>
+        <section class="popular_post_section">
+            <h2 class="title">인기글</h2>
+            <ul class="popular_post_list">
+                <li><a href="#">인기글1</a></li>
+                <li><a href="#">인기글2</a></li>
+                <li><a href="#">인기글3</a></li>
+                <li><a href="#">인기글4</a></li>
+            </ul>
+        </section>
+        <section class="banner_section">
+            <div class="banner_box_01">
+                <ul>
+                    <li><a href="#"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="banner_box_02">
+                <ul class="banner_list">
+                    <li><a href="#">
+                        <img src="/img/star-solid.svg" alt="">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="/img/github.svg" alt="">
+                    </a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="social_section">
+            <ul>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-commenting" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            </ul>
+        </section>
+
+        <footer class="footer">
+            <p>Copyright ⓒ 2022. MINSU All rights reserved.</p>
+        </footer>
 
     </div>
     
