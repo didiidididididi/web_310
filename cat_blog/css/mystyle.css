@@ -1,0 +1,80 @@
+/* 언어설정 */
+@charset 'UTF-8';
+
+/* 전체설정 */
+*{margin: 0; padding: 0;}
+a {text-decoration: none;
+    color: #333;}
+ul {list-style: none;}
+
+.container {display: flex;
+    background-color: beige;
+            width: 100%;}
+
+            
+.main_section {width: 60%;
+            height: auto;
+            padding-right: 40px;}
+
+
+
+.side_section {width: 30%;
+            height: auto;}
+
+main>ul {display: flex;
+    justify-content: center;
+    letter-spacing: 20px;}
+
+/* 헤더설정 */
+header {display: flex;
+        flex-direction: column;}
+header .logo {display: block;
+            text-align: center;
+            padding: 10px 0;}
+header>p {display: block;
+        text-align: center;
+        padding-bottom: 10px;}
+
+
+
+
+/* 포스트홈 설정 */
+.post_home {display: flex;
+        flex-direction: column;
+        padding: 20px 30px;}
+.post_title {font-size: 12px;
+            padding-bottom: 10px;}
+.post_img>img {width: 200px;
+                        height: 150px;
+                    display: block;
+                    position: relative;
+                border-radius: 50% 120% 120% 50%;}
+.post_img>p {display: block;
+                    position: absolute;
+                background-color: aquamarine;
+                z-index: 30;}
+.post_more {display: block;}
+
+/* 카테고리 설정 */
+.side_section {display: flex;
+        flex-direction: column;}
+
+.cat h3 {display: block;
+        text-align: center;
+        margin-bottom: 20px;}
+.cat ul {}
+.cat ul li {margin: 10px 0;}
+.cat ul li a {border-bottom: dotted 2px #666;}
+
+
+
+
+
+
+
+
+
+
+footer {display: flex;
+        flex-direction: column;}
+footer>ul>li>a {display: block;}
