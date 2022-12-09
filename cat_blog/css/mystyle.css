@@ -7,8 +7,10 @@ a {text-decoration: none;
     color: #333;}
 ul {list-style: none;}
 
+body {background-image: linear-gradient(to left, #faf6ed 50%, #efe8d5 50%);
+        background-size: 50px 100%;}
+
 .container {display: flex;
-    background-color: beige;
             width: 100%;}
 
             
@@ -23,7 +25,9 @@ ul {list-style: none;}
 
 main>ul {display: flex;
     justify-content: center;
-    letter-spacing: 20px;}
+    letter-spacing: 20px;
+padding-bottom: 100px;
+font-size: 30px;}
 
 /* 헤더설정 */
 header {display: flex;
@@ -59,13 +63,15 @@ header>p {display: block;
 .side_section {display: flex;
         flex-direction: column;}
 
+.cat {}
 .cat h3 {display: block;
         text-align: center;
-        margin-bottom: 20px;}
+        padding: 20px 0;}
 .cat ul {}
-.cat ul li {margin: 10px 0;}
+.cat ul li {padding: 10px 0;}
 .cat ul li a {border-bottom: dotted 2px #666;}
 
+legend {text-align: center;}
 
 
 
@@ -74,7 +80,13 @@ header>p {display: block;
 
 
 
-
-footer {display: flex;
-        flex-direction: column;}
-footer>ul>li>a {display: block;}
+footer {width: 100%;
+        background-color: #666;}
+footer>ul>li>a {display: block;
+                color: #fff;}
+footer ul {display: flex;
+        justify-content: space-around;
+        padding: 30px 100px;}
+footer p {display: block;
+        text-align: center;
+        padding-bottom: 100px;}
