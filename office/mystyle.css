@@ -1,0 +1,25 @@
+/* 언어설정 */
+@charset 'UTF-8';
+
+/* 전체설정 */
+*{margin: 0; padding: 0;}
+
+ul, ol {list-style: none;}
+a {text-decoration: none;}
+body {width: 1920px;}
+
+/* 인포섹션 설정 */
+header {}
+.info_section {width: 100%;
+    display: flex;
+            justify-content: center;
+            align-items: center;}
+.info_section p {font-size: 22px;
+                }
+
+.info_list {}
+.info_list li {display: block;}
+.info_list li a {margin: 0 10px;}
+
+/* home1 설정 */
+.home1 img {width: 100%;}

@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 *{margin: 0; padding: 0;}
 
+ul, ol {list-style: none;}
+a {text-decoration: none;}
+
 body{background-image: linear-gradient(to left, #faf6ed 50%, #efe8d5 50%);
 background-size: 40px 100%;}
 
@@ -148,6 +151,8 @@ header>p {color: #949087;
                     padding: 16px 0;
 }
 
+
+
 .news p {font-size: 14px;
         color: #949087;
         line-height: 1.6;
@@ -179,7 +184,7 @@ header>p {color: #949087;
                 font-size: 18px;
                 margin-left: -5px;} */
 
-main>ul {list-style: none;
+/* main>ul {list-style: none;
         display: flex;
     justify-content: center;}
 main>ul>li {margin-top: 30px;}
@@ -192,10 +197,10 @@ main>ul>li>a {display: block;
 
 main>ul>li:hover a {color: #fff;
                 background-color: #93d8d0;
-                border-radius: 50px;}
+                border-radius: 50px;} */
 
 /* 푸터 */
-
+/* 
 footer {background-color: #949087;
         padding: 50px;
         margin-top: 50px;}
@@ -210,8 +215,65 @@ footer ul li a {text-decoration: none;
 footer p {text-align: center;
         padding-top: 50px;
         font-size: 14px;
-        color: #ccc;}
+        color: #ccc;} */
 
+    
+/* 푸터설정 */
+footer {background-color: #949087;
+        text-align: center;
+        padding: 48px;
+        margin-top: 60px;}
+footer ul {display: flex;
+        justify-content: center;}
+footer li {margin: 0 12px;}
+footer li a {display: block;
+            color: #fff;}
+footer li a:hover {color: #000;}
+
+footer p {font-size: 14px;
+        color: #333;
+        margin-top: 20px;}
+
+
+/* 페이지네이션설정 */
+
+.pagination {display: flex;
+            justify-content: center;}
+.pagination li {margin: 0 10px;
+            }
+.pagination li a {display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 18px;
+                color: #949087;
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;}
+.pagination li a:hover {background-color: #93d8d0;
+                        color: #fff;}
+.pagination li:last-child a:hover {background-color: transparent;
+                            color: #949087;
+                            text-decoration: underline;}
+
+
+.pagination .current a {background-color: #ccc;
+                    color: #fff;}
+
+.pagination li:first-child a:hover {background-color: #ccc;
+                                color: #fff;
+                                opacity: 0.8;}
+
+/* 페이지와 페이지의 구분라인 */
+.pagination li::after {content: '\003C';
+                    margin-left: 20px;
+                    color: #949087;}
+
+.pagination li:last-child::after {content: '\0020';
+    margin-left: 20px;
+    color: #949087;}
+.pagination li:nth-child(4)::after {content: '\0020';
+        margin-left: -10px;
+        color: #949087;}
 
 
 
