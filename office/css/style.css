@@ -1,0 +1,186 @@
+/* 언어설정 */
+@charset 'UTF-8';
+
+/* 전체설정 */
+* {margin: 0; padding: 0;}
+ul {list-style: none;}
+a {text-decoration: none;
+    color: #888;}
+img {border: none;
+    vertical-align: bottom;}
+
+html {scroll-behavior: smooth;}
+
+/* 전체화면설정 */
+.wrapper {width: 1200px;
+        margin: 0 auto;}
+section h2 {text-align: center;
+        font-family: impact, sans-serif;
+        font-size: 80px;}
+section {
+        padding: 7em 0;}
+section .wrapper {padding: 4em 1em;}
+#about {background-color: #fff;
+        height: 100vh;}
+#news {background: linear-gradient(to bottom, #a18cd1 0%, #fbc2eb 100%);
+    clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);}
+#speakers {background-color: #fff;}
+#ticket {background: linear-gradient( to bottom,  rgba(197,120,234,1) 1.6%, rgba(120,220,234,1) 51.2%, rgba(119,249,176,1) 99.8% );
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+    height: 100vh;}
+
+/* 헤더설정 */
+header {background-color: #333;
+        width: 100%;
+        padding: 16px 0;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 10;}
+
+header .wrapper {display: flex;
+            justify-content: space-between;}
+header .logo {display: block;
+            font-size: 20px;
+            color: #fff;
+            font-weight: bold;
+            padding: 10px 20px;}
+
+nav ul {display: flex;}
+nav li {}
+nav li a {display: block;
+        font-size: 20px;
+        color: #fff;
+        font-weight: bold;
+        padding: 10px 20px;}
+
+/* 메인이미지 설정 */
+.mainImg {text-align: center;
+        height: 100vh;
+        background-color: #4db1ec;
+        background-image: url(../img/hero.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-blend-mode: screen;
+        display: flex;
+        align-items: center;
+        animation: bg 24s infinite;
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);}
+
+/* 애니메이션설정 */
+@keyframes boldh3 {
+    0% {font-weight: bold;
+        font-size: 20px;}
+    100% {font-weight: normal;
+        font-size: 60px;}
+}
+
+@keyframes bg {
+    0% {background-color: #4db1ec;}
+    12.5% {background-color: #1665cc;}
+    25% {background-color: #b473bf;}
+    37.5% {background-color: #ffb2c1;}
+    50% {background-color: #ff9f67;}
+    62.5% {background-color: #ffd673;}
+    75% {background-color: #a2e29b;}
+    87.5% {background-color: #00a2af;}
+    100% {background-color: #4db1ec;}
+}
+
+
+.mainImg h3 {font-weight: bold;
+            font-size: 100px;
+            /* animation: boldh3 3s infinite alternate; */
+            padding-bottom: 10px;}
+.mainImg .date {font-size: 50px;
+                font-weight: bold;
+            border-top: 2px solid #333;
+            border-bottom: 2px solid #333;
+            padding: 10px 0;}
+.mainImg .story1 {padding-top: 20px;}
+
+
+/* about설정 */
+#about h2 {background: linear-gradient(0deg, rgba(253,189,85,1) 7.8%, rgba(249,131,255,1) 100.3% ););
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;}
+#about img {width: 100%;
+            padding-top: 30px;}
+
+/* news설정 */
+#news h2{color: #fff;
+        font-weight: normal;}
+#news ul {width: 80%;
+        margin: 0 auto;}
+#news ul li {}
+#news ul li a {display: block;
+            padding: 20px;
+            font-size: 18px;
+            color: #fff;
+            border-bottom: 1px solid #fff;}
+#news li span {margin-right: 10px;
+            width: 180px;
+            display: inline-block;}
+
+#news li a:hover {background-color: #fff;
+                color: #00a2af;}
+
+/* speakers설정 */
+#speakers h2 {background: linear-gradient( to right,  rgba(252,225,208,1) 30%, rgba(255,173,214,1) 55.7%, rgba(162,186,245,1) 81.8% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: normal;}
+#speakers .wrapper>div {display: flex;
+                        margin-bottom: 20px;}
+#speakers .txt {width: 80%;
+            order: 2;
+            padding: 10px 40px;}
+
+#speakers img {width: 20%;
+            order: 1;
+            border-radius: 50%;
+            border: 1px solid #000;
+            box-sizing: border-box;
+            transition: all 0.5s;}
+
+#speakers .wrapper>div:hover img {
+        border: 1px solid #000;
+        padding: 10px;
+        box-sizing: border-box;
+        filter: blur(5px);
+}
+
+
+/* ticket설정 */
+#ticket h2 {font-weight: normal;
+            color: #fff;}
+#ticket form {width: 500px;
+            margin: 0 auto;}
+#ticket label {color: #fff;
+            margin-bottom: 8px;}
+#ticket .ticket {width: 100%;
+                padding: 1em;
+            background-color: rgba(255, 255, 255, 0.6);
+            border: none;
+            font-size: 18px;
+            margin-bottom: 20px;
+            box-sizing: border-box;}
+
+#ticket .ticket:focus {outline: none;}
+#ticket .btn {width: 100%;
+            padding: 1em;
+            font-size: 18px;
+            border: none;
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+            margin-top: 20px;}
+#ticket .btn:hover {background-color: #1665cc;}
+
+/* 카피라이트 설정 */
+.copy {border-top: solid 1px rgba(255, 255, 255, 0.5);
+        margin-top: 80px;
+        padding-top: 40px;}
+.copy p {color: #fff;
+        text-align: center;}
