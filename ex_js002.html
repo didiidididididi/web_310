@@ -31,7 +31,7 @@ flex-wrap: wrap; width: 100%;}
             font-size: 30px;
            flex: 1;
         margin: 0 2px; }
-.write li {background-color:#f3877f ;
+.write button {background-color:#f3877f ;
      height: 80px;
      font-size: 28px;
      color: #fff;
@@ -60,19 +60,39 @@ flex-wrap: wrap; width: 100%;}
                 <li>평균</li>
             </ul>
             <ul class="write">
-                <li id="kor"></li>
-                <li id="math"></li>
-                <li id="eng"></li>
-                <li id="add"></li>
-                <li id="avg"></li>
+                <button id="kor"></button>
+                <button id="math"></button>
+                <button id="eng"></button>
+                <button id="add"></button>
+                <button id="avg"></button>
             </ul>
         </div>
     
         <div id="result"></div>
 
-        
+        <!-- 잘 모르겠음. -->
+
         <script>
-            
+            document.getElementById('kor').addEventListener('click',
+            function(){
+                alert(kor)
+            })
+            document.getElementById('math').addEventListener('click',
+            function(){
+                alert(math)
+            })
+            document.getElementById('eng').addEventListener('click',
+            function(){
+                alert(eng)
+            })
+            document.getElementById('add').addEventListener('click',
+            function(){
+                alert(add)
+            })
+            document.getElementById('avg').addEventListener('click',
+            function(){
+                alert(avg)
+            })
 
             let kor=Number(prompt('국어 몇점?'));
             let math=Number(prompt('수학 몇점?'));
@@ -108,8 +128,6 @@ flex-wrap: wrap; width: 100%;}
 
             let Ravg = document.getElementById('avg')
             Ravg.innerHTML=avg;
-
-
 
         </script>
 
